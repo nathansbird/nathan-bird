@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nathan Bird</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" class="light">
+    <div id="home">
+        <img id="background" src="assets/nathan-background.jpg"/>
+        <div id="center-section">
+            <div id="screen">
+                <div id="page-1">
+                    <img id="back-layer" src="assets/nathan-background.jpg"/>
+                    <div id="nathan-title">
+                        <h1>Nathan<br>Scott<br>Bird</h1>
+                    </div>
+                    <img id="front-layer" src="assets/nathan-foreground.png"/>
+                </div>
+                <div id="page-2">
+                    <div id="mission">
+                        <h1 class="mv-active" onclick="this.classList.add('mv-active'); document.getElementsByClassName('mv-active')[1].classList.remove('mv-active');">MISSION</h1>
+                        <h1 onclick="this.classList.add('mv-active'); document.getElementsByClassName('mv-active')[0].classList.remove('mv-active');">VISION</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navigation">
+        <div id="tabs">
+            <a class="tab-name" href="https://nathan-bird.com"><p>about</p></a>
+            <div class="line"></div>
+            <a class="tab-name" href="https://nathan-bird.com/projects"><p>projects</p></a>
+            <a class="tab-name" href="https://nathan-bird.com/blog"><p>blogs</p></a>
+        </div>
+        <div id="center">
+            <div class="gutter" id="right-gutter">
+                <p class="scroll-tab active-tab" id="tab1" onclick="setTab(1)">01</p>
+                <div class="vline active" id="line1"></div>
+                <p class="scroll-tab" id="tab2" onclick="setTab(2)">02</p>
+                <div class="vline" id="line2"></div>
+                <p class="scroll-tab" id="tab3" onclick="setTab(3)">03</p>
+                <div class="vline" id="line3"></div>
+                <p class="scroll-tab" id="tab4" onclick="setTab(4)">04</p>
+                <div class="vline invisible" id="line4"></div>
+            </div>
+        </div>
+        <div id="lower-row">
+            <div id="icon-list">
+                <a href="https://www.facebook.com/thebirdwithafrenchfry" target="_blank"><img class="icon" src="https://nathan-bird.com/assets/icons/icons8-facebook-128.png"></a>
+                <a href="https://www.instagram.com/nathansbird" target="_blank"><img class="icon" src="https://nathan-bird.com/assets/icons/icons8-instagram-128.png"></a>
+                <a href="https://www.linkedin.com/in/nathan-bird-80ab69194/" target="_blank"><img class="icon" src="https://nathan-bird.com/assets/icons/icons8-linkedin-128.png"></a>
+                <a href="https://github.com/nathansbird" target="_blank"><img class="icon" src="https://nathan-bird.com/assets/icons/icons8-github-128.png"></a>
+            </div>
+            <div class="line"></div>
+            <div id="text">
+                <p id="designed-by" class="signature">nathanbird</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
